@@ -7,6 +7,15 @@ namespace TestFizzBuzz
 
     public class FizzBuzzTests
     {
+
+        [Fact]
+        public void FizzBuzz_Test_condition_checker()
+        {
+            string action = Actions.DoFizzBuzz(15);
+            bool result = Actions.FizzBuzzChecker("FizzBuzz", action);
+            Assert.True(result, "TEST FAILED");
+        }
+
         [Fact]
         public void FizzBuzz_Test_condition_3()
         {
@@ -30,6 +39,10 @@ namespace TestFizzBuzz
             bool result = Actions.IsFizzBuzz(action);
             Assert.True(result, "TEST FAILED");
         }
+
+        
+
+        
 
 
 

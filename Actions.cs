@@ -8,7 +8,7 @@ namespace FizzBuzz
     public class Actions
     {
 
-        // Accepts a list and returns the
+        // Accepts an integer and returns the
         // required outputs
         public static string DoFizzBuzz(int num)
         {
@@ -32,6 +32,30 @@ namespace FizzBuzz
             return word;
         }
 
+        // accepts an action and returns this boolean
+        // outcome.
+        public static bool FizzBuzzChecker(string expected, string Action)
+        {
+            if (Action == expected)
+            {
+                return true;
+
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+
+
+        /// <summary>
+        /// legacy functions below
+        /// </summary>
+        /// <param name="Action"></param>
+        /// <returns></returns>
+        // accepts an action and returns this boolean
+        // outcome.
         public static bool IsFizzBuzz(string Action)
         {
             if (Action == "FizzBuzz")
@@ -44,7 +68,6 @@ namespace FizzBuzz
                 return false;
             }
         }
-
 
         public static bool IsFizz(string Action)
         {
@@ -59,6 +82,7 @@ namespace FizzBuzz
             }
         }
 
+
         public static bool IsBuzz(string Action)
         {
             if (Action == "Buzz")
@@ -71,9 +95,6 @@ namespace FizzBuzz
                 return false;
             }
         }
-
-
-
 
 
 
