@@ -5,6 +5,10 @@ namespace FizzBuzz
 {
     public class Data
     {
+
+        // accepts two integers
+        // returns list of all integers between
+        // and including boundaries
         public static List<int> DataList(int a, int b)
         {
             var list = new List<int>();

@@ -32,8 +32,8 @@ namespace FizzBuzz
             return word;
         }
 
-        // accepts an action and returns this boolean
-        // outcome.
+        // accepts an action and string
+        // returns a bollean outcome dependent upon match
         public static bool FizzBuzzChecker(string expected, string Action)
         {
             if (Action == expected)
@@ -46,56 +46,6 @@ namespace FizzBuzz
                 return false;
             }
         }
-
-
-
-        /// <summary>
-        /// legacy functions below
-        /// </summary>
-        /// <param name="Action"></param>
-        /// <returns></returns>
-        // accepts an action and returns this boolean
-        // outcome.
-        public static bool IsFizzBuzz(string Action)
-        {
-            if (Action == "FizzBuzz")
-            {
-                return true;
-
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        public static bool IsFizz(string Action)
-        {
-            if (Action == "Fizz")
-            {
-                return true;
-
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-
-        public static bool IsBuzz(string Action)
-        {
-            if (Action == "Buzz")
-            {
-                return true;
-
-            }
-            else
-            {
-                return false;
-            }
-        }
-
 
 
 
