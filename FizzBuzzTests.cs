@@ -20,7 +20,7 @@ namespace TestFizzBuzz
         public void FizzBuzz_Test_condition_3()
         {
             string action = Actions.DoFizzBuzz(3);
-            bool result = Actions.IsFizz(action);
+            bool result = Actions.FizzBuzzChecker("Fizz",action);
             Assert.True(result, "TEST FAILED" );
         }
 
@@ -28,22 +28,9 @@ namespace TestFizzBuzz
         public void FizzBuzz_Test_condition_5()
         {
             string action = Actions.DoFizzBuzz(5);
-            bool result = Actions.IsBuzz(action);
+            bool result = Actions.FizzBuzzChecker("Buzz", action);
             Assert.True(result, "TEST FAILED");
         }
-
-        [Fact]
-        public void FizzBuzz_Test_condition_3_and_5()
-        {
-            string action = Actions.DoFizzBuzz(15);
-            bool result = Actions.IsFizzBuzz(action);
-            Assert.True(result, "TEST FAILED");
-        }
-
-        
-
-        
-
 
 
     }
